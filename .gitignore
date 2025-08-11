@@ -1,0 +1,47 @@
+# ## General ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ## Backend (Node.js / Express) ###
+# Dependency directory
+backend/node_modules/
+
+# Environment variables file - IMPORTANT!
+backend/.env
+
+# ## Frontend (React / Vite) ###
+# Dependency directory
+frontend/node_modules/
+
+# Environment variables file - IMPORTANT!
+frontend/.env.local
+frontend/.env.*.local
+
+# Build output
+frontend/dist/
+
+# Crash reports and diagnostic logs
+# From create-react-app, good practice for Vite too
+frontend/build/
+frontend/.pnp
+frontend/.pnp.js
+frontend/.pnp.cjs
