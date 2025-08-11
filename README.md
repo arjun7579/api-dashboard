@@ -45,7 +45,7 @@ PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_jwt_key
 
-# Nodemailer setup (using a service like Ethereal for testing is recommended)
+# Nodemailer setup (using a service like Ethereal for testing)
 EMAIL_HOST=smtp.ethereal.email
 EMAIL_PORT=587
 EMAIL_USER=your_ethereal_user
@@ -53,3 +53,28 @@ EMAIL_PASS=your_ethereal_password
 
 # 4. Start the backend server
 npm run dev
+```
+### 2. Frontend Setup
+
+```bash
+# 1. In a new terminal, navigate to the frontend directory
+cd frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Create a .env.local file in the `frontend` root
+#    and add the following variable:
+VITE_API_URL=http://localhost:5000
+
+# 4. Start the frontend development server
+npm run dev
+```
+### 3. Accessing the Application
+
+- The React application will be running at ```http://localhost:5173```.
+- The Express API will be running at ```http://localhost:5000```.
+
+---
+
+__made with react by arjun7579__
